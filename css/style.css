@@ -743,11 +743,13 @@ template {
 
 .slider-button--next {
   right: 18px;
-  background-image: url(../img/arrow-fwd.svg);
+  background-image: url(https://dankoproj.ru/homeworks/img/arrow-fwd.svg);
+  z-index: 999;
 }
 
 .slider-button--prev {
   left: 18px;
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(https://dankoproj.ru/homeworks/img/arrow-prev.svg);
+  z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */
