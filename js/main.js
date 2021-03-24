@@ -9,13 +9,13 @@ var hotelSlider = new Swiper(".hotel-slider", {
   },
   effect: "coverflow",
 });
-var  reviewSlider = new Swiper(".review-slider", {
+var reviewSlider = new Swiper(".review-slider", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".hotel-slider__button--next",
-    prevEl: ".hotel-slider__button--prev",
+    nextEl: ".review-slider__button--next",
+    prevEl: ".review-slider__button--prev",
   },
 });
