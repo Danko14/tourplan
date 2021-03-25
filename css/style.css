@@ -1347,7 +1347,8 @@ template {
     height: 250px;
   }
   .newsletter {
-    padding: 76px 83px 0;
+    min-height: 320px;
+    padding: 76px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
