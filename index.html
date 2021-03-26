@@ -7,29 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tour plan</title>
   <link rel="stylesheet" href="https://dankoproj.ru/homeworks/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://dankoproj.ru/homeworks/lesson-25/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
   <link rel="icon" href="https://dankoproj.ru/homeworks/img/mountain.png" type="image/x-icon" />
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="https://dankoproj.ru/homeworks/lesson-17/img/horizontal-logo.png" alt="logo: best_tour_plan"
             class="logo__image" />
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location"></input>
           <button class="search__button">
             <img class="search__button-icon" src="https://dankoproj.ru/homeworks/lesson-17/img/lens_button.svg"
               alt="icon: search">
-
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="https://dankoproj.ru/homeworks/lesson-17/img/user_avatar.jpg" alt="avatar: Nathan"
             class="user__avatar" />
           <span class="user__name">Nathan</span>
@@ -50,6 +49,22 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img src="https://dankoproj.ru/homeworks/lesson-17/img/user_avatar.jpg" alt="avatar: Nathan"
+                class="user__avatar" />
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input type="text" class="search__input" placeholder="Search Location"></input>
+              <button class="search__button">
+                <img class="search__button-icon" src="https://dankoproj.ru/homeworks/lesson-17/img/lens_button.svg"
+                  alt="icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item"><a href="" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="" class="navbar-menu__link">Activities</a></li>
@@ -429,7 +444,7 @@
   <!-- /.footer -->
   <!-- /.activities -->
   <script src="https://dankoproj.ru/homeworks/js/swiper-bundle.min.js"></script>
-  <script src="https://dankoproj.ru/homeworks/lesson-22/js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

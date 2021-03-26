@@ -72,6 +72,11 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 18px;
+}
+
+.navbar-menu__item--mobile--visible {
+  display: none;
 }
 
 .logo {
@@ -131,6 +136,8 @@ img {
 
 .user__name {
   margin-left: 18px;
+  font-size: 14px;
+  line-height: 18px;
   color: #333333;
 }
 
@@ -1454,8 +1461,57 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
   }
   .swiper-container {
     width: 100%;
@@ -1485,6 +1541,11 @@ template {
     width: 16px;
     height: 2px;
     background-color: #333333;
+  }
+  .user__name {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .stars {
     -ms-flex-preferred-size: content !important;
