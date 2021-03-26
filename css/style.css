@@ -1281,6 +1281,8 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+  resize: none;
+  height: 120px;
 }
 
 .footer__button {
@@ -1302,7 +1304,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #bdbdbd;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
