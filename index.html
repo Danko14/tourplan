@@ -11,7 +11,9 @@
   <link rel="stylesheet"
         href="https://dankoproj.ru/homeworks/swiper-bundle.min.css">
   <link rel="stylesheet"
-        href="https://dankoproj.ru/homeworks/lesson-28/css/style.css">
+        href="/css/aos.css">
+  <link rel="stylesheet"
+        href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
         rel="stylesheet">
   <link rel="icon"
@@ -24,12 +26,16 @@
     <div class="container">
       <div class="navbar-top">
         <a href="#"
-           class="logo">
+           class="logo"
+           data-aos="fade-right"
+           data-aos-delay="100">
           <img src="https://dankoproj.ru/homeworks/lesson-17/img/horizontal-logo.png"
                alt="logo: best_tour_plan"
                class="logo__image" />
         </a>
-        <form action="#"
+        <form data-aos="fade-right"
+              data-aos-delay="200"
+              action="#"
               class="search navbar__search navbar__search--mobile--hidden">
           <input type="text"
                  class="search__input"
@@ -41,7 +47,9 @@
           </button>
         </form>
         <a href="#"
-           class="user navbar__user navbar__user--mobile--hidden">
+           class="user navbar__user navbar__user--mobile--hidden"
+           data-aos="fade-right"
+           data-aos-delay="300">
           <img src="https://dankoproj.ru/homeworks/lesson-17/img/user_avatar.jpg"
                alt="avatar: Nathan"
                class="user__avatar" />
@@ -191,7 +199,7 @@
               <div class="booking__price">
                 <span class="booking__start">price starts at</span>
                 <strong class="booking__pricetag">$ 8,500</strong>
-                <span class="booking__per-room">per room / night</span>room
+                <span class="booking__per-room">per room / night</span>
               </div>
               <!-- /.booking__price -->
               <div class="booking__room">
@@ -387,7 +395,9 @@
     <div class="container">
       <h2 class="activity-title">Other activities</h2>
       <div class="activity-wrapper">
-        <div class="card activity__card">
+        <div class="card activity__card"
+             data-aos="fade-right"
+             data-aos-delay="100">
           <img src="https://dankoproj.ru/homeworks/lesson-23/img/card-1.jpg"
                alt="The curious corner
             of chamarel"
@@ -396,7 +406,9 @@
             of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card activity__card">
+        <div class="card activity__card"
+             data-aos="fade-right"
+             data-aos-delay="300">
           <img src="https://dankoproj.ru/homeworks/lesson-23/img/card-2.jpg"
                alt="Gymkhana club golf
             course"
@@ -405,7 +417,9 @@
             course</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card activity__card">
+        <div class="card activity__card"
+             data-aos="fade-right"
+             data-aos-delay="500">
           <img src="https://dankoproj.ru/homeworks/lesson-23/img/card-3.jpg"
                alt="Tamarind falls hiking
             trip - full day"
@@ -414,7 +428,9 @@
             trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card activity__card">
+        <div class="card activity__card"
+             data-aos="fade-right"
+             data-aos-delay="700">
           <img src="https://dankoproj.ru/homeworks/lesson-23/img/card-4.jpg"
                alt="The blue marine discovery
             quest"
@@ -537,15 +553,21 @@
           <h3 class="footer__title">Send us a message</h3>
           <form action="https://dankoproj.ru/homeworks/lesson-27/send.php"
                 method="POST"
-                class="footer__form">
-            <input type="text"
-                   class="input footer__input"
-                   placeholder="Your Full Name*"
-                   name="name">
-            <input type="text"
-                   class="input footer__input"
-                   placeholder="Phone Number*"
-                   name="phone">
+                class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text"
+                     class="input footer__input"
+                     placeholder="Your Full Name*"
+                     name="name"
+                     required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel"
+                     class="input footer__input"
+                     placeholder="Phone Number*"
+                     name="phone"
+                     required>
+            </div>
             <textarea class="message footer__message"
                       placeholder="Message"
                       name="message"></textarea>
@@ -572,19 +594,23 @@
       <h3 class="modal__title">Booking</h3>
       <form action="https://dankoproj.ru/homeworks/lesson-27/send.php"
             method="POST"
-            class="modal__form">
+            class="modal__form form">
         <input type="text"
                class="input modal__input"
                placeholder="Your Full Name*"
-               name="name">
-        <input type="text"
+               name="name"
+               required
+               minlength="2">
+        <input type="tel"
                class="input modal__input"
                placeholder="Phone Number*"
-               name="phone">
-        <input type="text"
+               name="phone"
+               required>
+        <input type="email"
                class="input modal__input"
                placeholder="Email*"
-               name="email">
+               name="email"
+               required>
         <textarea class="message modal__message"
                   placeholder="Message"
                   name="message"></textarea>
@@ -608,19 +634,22 @@
       <h3 class="modal__title">Send us feedback</h3>
       <form action="https://dankoproj.ru/homeworks/lesson-27/send.php"
             method="POST"
-            class="modal__form">
+            class="modal__form form">
         <input type="text"
                class="input modal__input"
                placeholder="Your Full Name*"
-               name="name">
-        <input type="text"
+               name="name"
+               required>
+        <input type="tel"
                class="input modal__input"
                placeholder="Phone Number*"
-               name="phone">
-        <input type="text"
+               name="phone"
+               required>
+        <input type="email"
                class="input modal__input"
                placeholder="Email*"
-               name="email">
+               name="email"
+               required>
         <textarea class="message modal__message"
                   placeholder="Message"
                   name="message"></textarea>
@@ -633,8 +662,10 @@
   </div>
   <!-- /.modal -->
   <script src="https://dankoproj.ru/homeworks/lesson-28/js/jquery-3.6.0.min.js"></script>
+  <script src="https://dankoproj.ru/homeworks/lesson-29/js/jquery.validate.min.js"></script>
   <script src="https://dankoproj.ru/homeworks/js/swiper-bundle.min.js"></script>
-  <script src="https://dankoproj.ru/homeworks/lesson-28/js/main.js"></script>
+  <script src="/js/aos.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
