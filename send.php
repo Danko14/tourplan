@@ -2,9 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // Файлы phpmailer
-require 'https://dankoproj.ru/homeworks/lesson-27/phpmailer/PHPMailer.php';
-require 'https://dankoproj.ru/homeworks/lesson-27/phpmailer/SMTP.php';
-require 'https://dankoproj.ru/homeworks/lesson-27/phpmailer/Exception.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
