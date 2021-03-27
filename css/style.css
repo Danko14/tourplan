@@ -855,7 +855,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(https://dankoproj.ru/homeworks/lesson-22/img/newsletter_bg.jpg);
+  background-image: url(https://dankoproj.ru/homeworks/img/newsletter_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -977,7 +977,7 @@ template {
   top: 13px;
   width: 70px;
   height: 47px;
-  background-image: url(https://dankoproj.ru/homeworks/lesson-22/img/Quote_left.svg);
+  background-image: url(https://dankoproj.ru/homeworks/img/Quote_left.svg);
   background-repeat: no-repeat;
 }
 
@@ -988,7 +988,7 @@ template {
   top: 118px;
   width: 70px;
   height: 47px;
-  background-image: url(https://dankoproj.ru/homeworks/lesson-22/img/Quote_right.svg);
+  background-image: url(https://dankoproj.ru/homeworks/img/Quote_right.svg);
   background-repeat: no-repeat;
 }
 
@@ -1009,12 +1009,12 @@ template {
 }
 
 .review-slider__button--prev {
-  background-image: url(https://dankoproj.ru/homeworks/lesson-22/img/arrow-prev-secondary.svg);
+  background-image: url(https://dankoproj.ru/homeworks/img/arrow-prev-secondary.svg);
   left: 0;
 }
 
 .review-slider__button--next {
-  background-image: url(https://dankoproj.ru/homeworks/lesson-22/img/arrow-next-secondary.svg);
+  background-image: url(https://dankoproj.ru/homeworks/img/arrow-next-secondary.svg);
   right: 0;
 }
 
